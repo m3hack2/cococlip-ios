@@ -1,0 +1,3 @@
+[submodule "cococlip/Classes/Libraries/swift-json"]
+	path = cococlip/Classes/Libraries/swift-json
+	url = https://github.com/dankogai/swift-json.git
