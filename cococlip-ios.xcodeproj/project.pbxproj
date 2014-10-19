@@ -13,6 +13,11 @@
 		D2FD727D19F28A6A001DF777 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD727C19F28A6A001DF777 /* Images.xcassets */; };
 		D2FD728019F28A6A001DF777 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FD727E19F28A6A001DF777 /* LaunchScreen.xib */; };
 		D2FD728C19F28A6A001DF777 /* cococlip_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD728B19F28A6A001DF777 /* cococlip_iosTests.swift */; };
+		D2FD729A19F28ADF001DF777 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729919F28ADF001DF777 /* HTTPClient.swift */; };
+		D2FD729B19F28AF0001DF777 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729919F28ADF001DF777 /* HTTPClient.swift */; };
+		D2FD72A019F28B23001DF777 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729F19F28B23001DF777 /* HTTPClientTests.swift */; };
+		D2FD72A219F2916F001DF777 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */; };
+		D2FD72A319F2925F001DF777 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,9 @@
 		D2FD728519F28A6A001DF777 /* cococlip-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cococlip-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD728A19F28A6A001DF777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2FD728B19F28A6A001DF777 /* cococlip_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cococlip_iosTests.swift; sourceTree = "<group>"; };
+		D2FD729919F28ADF001DF777 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D2FD729F19F28B23001DF777 /* HTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		D2FD727219F28A6A001DF777 /* cococlip-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D2FD729519F28A79001DF777 /* Classes */,
 				D2FD727519F28A6A001DF777 /* AppDelegate.swift */,
 				D2FD727719F28A6A001DF777 /* ViewController.swift */,
 				D2FD727919F28A6A001DF777 /* Main.storyboard */,
@@ -98,6 +107,7 @@
 		D2FD728819F28A6A001DF777 /* cococlip-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				D2FD729D19F28B0A001DF777 /* Classes */,
 				D2FD728B19F28A6A001DF777 /* cococlip_iosTests.swift */,
 				D2FD728919F28A6A001DF777 /* Supporting Files */,
 			);
@@ -110,6 +120,39 @@
 				D2FD728A19F28A6A001DF777 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2FD729519F28A79001DF777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD729619F28A7F001DF777 /* Libraries */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D2FD729619F28A7F001DF777 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD729919F28ADF001DF777 /* HTTPClient.swift */,
+				D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		D2FD729D19F28B0A001DF777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD729E19F28B10001DF777 /* Libraries */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D2FD729E19F28B10001DF777 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD729F19F28B23001DF777 /* HTTPClientTests.swift */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +257,8 @@
 			files = (
 				D2FD727819F28A6A001DF777 /* ViewController.swift in Sources */,
 				D2FD727619F28A6A001DF777 /* AppDelegate.swift in Sources */,
+				D2FD729A19F28ADF001DF777 /* HTTPClient.swift in Sources */,
+				D2FD72A219F2916F001DF777 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FD729B19F28AF0001DF777 /* HTTPClient.swift in Sources */,
 				D2FD728C19F28A6A001DF777 /* cococlip_iosTests.swift in Sources */,
+				D2FD72A019F28B23001DF777 /* HTTPClientTests.swift in Sources */,
+				D2FD72A319F2925F001DF777 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
