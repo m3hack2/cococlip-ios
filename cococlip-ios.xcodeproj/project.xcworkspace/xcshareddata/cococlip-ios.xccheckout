@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0CFFE48-C5A2-4806-8DB0-EB3E09E2A72D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cococlip-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C69FC2C35CABF72DCA21DC57CBF4F009762C6EBD</key>
+		<string>github.com:m3hack2/cococlip-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cococlip-ios.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C69FC2C35CABF72DCA21DC57CBF4F009762C6EBD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:m3hack2/cococlip-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C69FC2C35CABF72DCA21DC57CBF4F009762C6EBD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C69FC2C35CABF72DCA21DC57CBF4F009762C6EBD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cococlip-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

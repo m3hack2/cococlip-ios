@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2A7DC1C19F4F41E00FFBC0C /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */; };
+		D2A7DC1F19F4F43200FFBC0C /* CococlipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */; };
+		D2AF059E19F5057D00654D79 /* CococlipServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */; };
+		D2AF059F19F505DD00654D79 /* CococlipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */; };
+		D2AF05A019F5067500654D79 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */; };
 		D2FD727619F28A6A001DF777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD727519F28A6A001DF777 /* AppDelegate.swift */; };
 		D2FD727819F28A6A001DF777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD727719F28A6A001DF777 /* ViewController.swift */; };
 		D2FD727B19F28A6A001DF777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FD727919F28A6A001DF777 /* Main.storyboard */; };
@@ -16,8 +21,6 @@
 		D2FD729A19F28ADF001DF777 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729919F28ADF001DF777 /* HTTPClient.swift */; };
 		D2FD729B19F28AF0001DF777 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729919F28ADF001DF777 /* HTTPClient.swift */; };
 		D2FD72A019F28B23001DF777 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD729F19F28B23001DF777 /* HTTPClientTests.swift */; };
-		D2FD72A219F2916F001DF777 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */; };
-		D2FD72A319F2925F001DF777 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CococlipService.swift; sourceTree = "<group>"; };
+		D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CococlipServiceTests.swift; sourceTree = "<group>"; };
 		D2FD727019F28A6A001DF777 /* cococlip-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cococlip-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD727419F28A6A001DF777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2FD727519F28A6A001DF777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +49,6 @@
 		D2FD728B19F28A6A001DF777 /* cococlip_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cococlip_iosTests.swift; sourceTree = "<group>"; };
 		D2FD729919F28ADF001DF777 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D2FD729F19F28B23001DF777 /* HTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
-		D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2A7DC1A19F4F41200FFBC0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D2A7DC1D19F4F42300FFBC0C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D2A7DC2019F5044C00FFBC0C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		D2FD726719F28A6A001DF777 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +154,8 @@
 		D2FD729519F28A79001DF777 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D2A7DC1D19F4F42300FFBC0C /* Services */,
+				D2A7DC1A19F4F41200FFBC0C /* Models */,
 				D2FD729619F28A7F001DF777 /* Libraries */,
 			);
 			name = Classes;
@@ -134,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				D2FD729919F28ADF001DF777 /* HTTPClient.swift */,
-				D2FD72A119F2916F001DF777 /* SwiftyJSON.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -142,6 +172,7 @@
 		D2FD729D19F28B0A001DF777 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D2A7DC2019F5044C00FFBC0C /* Services */,
 				D2FD729E19F28B10001DF777 /* Libraries */,
 			);
 			name = Classes;
@@ -256,9 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FD727819F28A6A001DF777 /* ViewController.swift in Sources */,
+				D2A7DC1C19F4F41E00FFBC0C /* Clip.swift in Sources */,
+				D2A7DC1F19F4F43200FFBC0C /* CococlipService.swift in Sources */,
 				D2FD727619F28A6A001DF777 /* AppDelegate.swift in Sources */,
 				D2FD729A19F28ADF001DF777 /* HTTPClient.swift in Sources */,
-				D2FD72A219F2916F001DF777 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FD729B19F28AF0001DF777 /* HTTPClient.swift in Sources */,
+				D2AF05A019F5067500654D79 /* Clip.swift in Sources */,
+				D2AF059E19F5057D00654D79 /* CococlipServiceTests.swift in Sources */,
+				D2AF059F19F505DD00654D79 /* CococlipService.swift in Sources */,
 				D2FD728C19F28A6A001DF777 /* cococlip_iosTests.swift in Sources */,
 				D2FD72A019F28B23001DF777 /* HTTPClientTests.swift in Sources */,
-				D2FD72A319F2925F001DF777 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +487,7 @@
 				D2FD729119F28A6A001DF777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2FD729219F28A6A001DF777 /* Build configuration list for PBXNativeTarget "cococlip-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +496,7 @@
 				D2FD729419F28A6A001DF777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

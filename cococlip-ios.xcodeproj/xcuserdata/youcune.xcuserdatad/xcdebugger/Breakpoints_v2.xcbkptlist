@@ -14,51 +14,51 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "testParsingJsonFromUrl()"
+            endingLineNumber = "28">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cococlip-iosTests/CococlipServiceTests.swift"
+            timestampString = "435488597.534836"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "test_JSON&#x304b;&#x3089;&#x5024;&#x3092;&#x53d6;&#x308a;&#x51fa;&#x305b;&#x308b;()"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "cococlip_iosTests.HTTPClientTests.testExample (cococlip_iosTests.HTTPClientTests)() -&gt; ()"
+                  symbolName = "cococlip_iosTests.CococlipServiceTests.test_API&#x3092;&#x30b3;&#x30fc;&#x30eb;&#x3057;Clip&#x306e;&#x914d;&#x5217;&#x304c;&#x8fd4;&#x308b; (cococlip_iosTests.CococlipServiceTests)() -&gt; ()"
                   moduleName = "cococlip-iosTests"
-                  urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/HTTPClientTests.swift"
-                  timestampString = "435411349.773617"
+                  urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/CococlipServiceTests.swift"
+                  timestampString = "435488625.648395"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "508">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "99">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "cococlip_iosTests.HTTPClientTests.(testExample (cococlip_iosTests.HTTPClientTests) -&gt; () -&gt; ()).(implicit closure #2)"
+                  symbolName = "cococlip_iosTests.CococlipServiceTests.(test_API&#x3092;&#x30b3;&#x30fc;&#x30eb;&#x3057;Clip&#x306e;&#x914d;&#x5217;&#x304c;&#x8fd4;&#x308b; (cococlip_iosTests.CococlipServiceTests) -&gt; () -&gt; ()).(implicit closure #1)"
                   moduleName = "cococlip-iosTests"
-                  urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/HTTPClientTests.swift"
-                  timestampString = "435411349.77404"
+                  urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/CococlipServiceTests.swift"
+                  timestampString = "435488625.648687"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned () -&gt; (@owned Swift.String) to @callee_owned () -&gt; (@out Swift.String)"
-                  moduleName = "cococlip-iosTests"
-                  urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/HTTPClientTests.swift"
-                  timestampString = "435411349.7744"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "11">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
