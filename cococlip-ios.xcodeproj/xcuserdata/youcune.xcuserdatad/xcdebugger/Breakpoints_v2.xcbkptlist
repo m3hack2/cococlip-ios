@@ -20,7 +20,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cococlip-iosTests/CococlipServiceTests.swift"
@@ -29,17 +29,17 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "test_JSON&#x304b;&#x3089;&#x5024;&#x3092;&#x53d6;&#x308a;&#x51fa;&#x305b;&#x308b;()"
+            landmarkName = "test_API&#x3092;&#x30b3;&#x30fc;&#x30eb;&#x3057;Clip&#x306e;&#x914d;&#x5217;&#x304c;&#x8fd4;&#x308b;()"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "cococlip_iosTests.CococlipServiceTests.test_API&#x3092;&#x30b3;&#x30fc;&#x30eb;&#x3057;Clip&#x306e;&#x914d;&#x5217;&#x304c;&#x8fd4;&#x308b; (cococlip_iosTests.CococlipServiceTests)() -&gt; ()"
                   moduleName = "cococlip-iosTests"
                   urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/CococlipServiceTests.swift"
-                  timestampString = "435488625.648395"
+                  timestampString = "435574152.519582"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -47,13 +47,13 @@
                   offsetFromSymbolStart = "99">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "cococlip_iosTests.CococlipServiceTests.(test_API&#x3092;&#x30b3;&#x30fc;&#x30eb;&#x3057;Clip&#x306e;&#x914d;&#x5217;&#x304c;&#x8fd4;&#x308b; (cococlip_iosTests.CococlipServiceTests) -&gt; () -&gt; ()).(implicit closure #1)"
                   moduleName = "cococlip-iosTests"
                   urlString = "file:///Users/youcune/develop/cococlip-ios/cococlip-iosTests/CococlipServiceTests.swift"
-                  timestampString = "435488625.648687"
+                  timestampString = "435574152.52398"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
