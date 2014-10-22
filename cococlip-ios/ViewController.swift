@@ -9,24 +9,60 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var tableView: UITableView!
-    
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     var clips: [Clip] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        clips = CococlipService.getClipsBy(CLLocation(latitude: 22, longitude: 22))
-        tableView.delegate = self
-        tableView.dataSource = self
+        getLocation()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    // ---------------------------------------------------------------
+    // 位置情報関連
+    // ---------------------------------------------------------------
+    var manager: CLLocationManager!
+    func getLocation () {
+        manager = CLLocationManager()
+        manager.delegate = self
+        
+        if(CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse) {
+            manager.requestAlwaysAuthorization()
+        }
+        
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.distanceFilter = 100
+        manager.startUpdatingLocation()
+    }
     
+    // 状態変化
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        println("CLAuthorizationStatus: \(status)")
+    }
+    
+    // 成功
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!){
+        clips = CococlipService.getClipsBy(manager.location)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    // 失敗
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!){
+        // TODO
+        println("ERROR")
+    }
+
+    // ---------------------------------------------------------------
+    // Clips 一覧表示の TableView 関連
+    // ---------------------------------------------------------------
+    @IBOutlet weak var tableView: UITableView!
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int  {
         return clips.count
     }
