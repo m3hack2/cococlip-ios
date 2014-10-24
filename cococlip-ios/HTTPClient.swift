@@ -9,12 +9,17 @@
 import Foundation
 
 class HTTPClient {
-    class func GetJsonByNSURL(url: NSURL) -> AnyObject? {
-        var request = NSURLRequest(URL: url)
-        var response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
-        var error: AutoreleasingUnsafeMutablePointer<NSErrorPointer?> = nil
-        var data: NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error:nil)!
-        var object: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
+    class func getJson(url: NSURL) -> AnyObject? {
+        let data: NSData = getData(url)
+        let object: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
         return object
+    }
+    
+    class func getData(url: NSURL) -> NSData {
+        let request = NSURLRequest(URL: url)
+        let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
+        let error: AutoreleasingUnsafeMutablePointer<NSErrorPointer?> = nil
+        let data: NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error:nil)!
+        return(data)
     }
 }

@@ -12,6 +12,7 @@
 		D2AF059E19F5057D00654D79 /* CococlipServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */; };
 		D2AF059F19F505DD00654D79 /* CococlipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */; };
 		D2AF05A019F5067500654D79 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */; };
+		D2C612EA19F9064500958A54 /* ClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C612E919F9064500958A54 /* ClipCell.swift */; };
 		D2FD727619F28A6A001DF777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD727519F28A6A001DF777 /* AppDelegate.swift */; };
 		D2FD727819F28A6A001DF777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD727719F28A6A001DF777 /* ViewController.swift */; };
 		D2FD727B19F28A6A001DF777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FD727919F28A6A001DF777 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		D2A7DC1B19F4F41E00FFBC0C /* Clip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
 		D2A7DC1E19F4F43200FFBC0C /* CococlipService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CococlipService.swift; sourceTree = "<group>"; };
 		D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CococlipServiceTests.swift; sourceTree = "<group>"; };
+		D2C612E919F9064500958A54 /* ClipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipCell.swift; sourceTree = "<group>"; };
 		D2FD727019F28A6A001DF777 /* cococlip-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cococlip-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD727419F28A6A001DF777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2FD727519F28A6A001DF777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 				D2AF059D19F5057D00654D79 /* CococlipServiceTests.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		D2C612E819F9063900958A54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C612E919F9064500958A54 /* ClipCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		D2FD726719F28A6A001DF777 = {
@@ -154,6 +164,7 @@
 		D2FD729519F28A79001DF777 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D2C612E819F9063900958A54 /* Views */,
 				D2A7DC1D19F4F42300FFBC0C /* Services */,
 				D2A7DC1A19F4F41200FFBC0C /* Models */,
 				D2FD729619F28A7F001DF777 /* Libraries */,
@@ -291,6 +302,7 @@
 				D2A7DC1F19F4F43200FFBC0C /* CococlipService.swift in Sources */,
 				D2FD727619F28A6A001DF777 /* AppDelegate.swift in Sources */,
 				D2FD729A19F28ADF001DF777 /* HTTPClient.swift in Sources */,
+				D2C612EA19F9064500958A54 /* ClipCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

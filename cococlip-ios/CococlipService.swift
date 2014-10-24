@@ -19,7 +19,7 @@ public class CococlipService {
             "lon": "\(location.coordinate.longitude)"
         ]
         let endpoint: NSURL = NSURL(string: "\(CLIPS_ENDPOINT)?\(buildParameters(params))")
-        let json: AnyObject? = HTTPClient.GetJsonByNSURL(endpoint)
+        let json: AnyObject? = HTTPClient.getJson(endpoint)
         
         if let jsonDic = json as? NSDictionary{
             if let results = jsonDic["results"] as? NSArray{

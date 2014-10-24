@@ -12,6 +12,8 @@ import CoreLocation
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     var clips: [Clip] = []
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,12 +52,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         clips = CococlipService.getClipsBy(manager.location)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // clips が更新されているので、 UITableView　に再描画を指示
+        tableView.reloadData()
     }
     
     // 失敗
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!){
         // TODO
-        println("ERROR")
+        println("ERROR: \(error)")
     }
 
     // ---------------------------------------------------------------
@@ -68,8 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
-        cell.textLabel?.text = clips[indexPath.row].title!
+        let cell: ClipCell = ClipCell(clip: clips[indexPath.row])
         return cell
     }
     
