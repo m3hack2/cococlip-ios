@@ -18,7 +18,7 @@ class ClipCell: UITableViewCell, NSURLConnectionDelegate {
         self.textLabel?.text = clip.title!
         
         // 非同期通信開始
-        let request = NSURLRequest(URL: NSURL(string: clip.low_image1_url!))
+        let request = NSURLRequest(URL: clip.low_image1_url!)
         let connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: true)
         connection.start()
     }

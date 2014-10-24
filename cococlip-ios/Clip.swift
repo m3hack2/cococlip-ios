@@ -6,26 +6,39 @@
 //  Copyright (c) 2014年 Yu Nakanishi. All rights reserved.
 //
 
+import CoreLocation
 import Foundation
 
 class Clip {
     var id: String?
     var title: String?
-    var lat: Double?
-    var lon: Double?
-    var low_image1_url: String?
-    var high_image1_url: String?
-    var low_image2_url: String?
-    var high_image2_url: String?
+    var location: CLLocation?
+    var low_image1_url: NSURL?
+    var high_image1_url: NSURL?
+    var low_image2_url: NSURL?
+    var high_image2_url: NSURL?
     
     init(dic: NSDictionary) {
-        self.id = dic["id"] as? String
+        self.id = dic["_id"] as? String
         self.title = dic["title"] as? String
-        self.lat = dic["lat"] as? Double
-        self.lon = dic["lon"] as? Double
-        self.low_image1_url = dic["low_image1_url"] as? String
-        self.high_image1_url = dic["high_image1_url"] as? String
-        self.low_image2_url = dic["low_image2_url"] as? String
-        self.high_image2_url = dic["high_image2_url"] as? String
+        
+        if let loc = dic["loc"] as? NSDictionary {
+            let lat = loc["lat"] as? Double
+            let lon = loc["lon"] as? Double
+            self.location = CLLocation(latitude: lat!, longitude: lon!)
+        }
+
+        if let low_image1_url_str = dic["low_image1_url"] as? String {
+            self.low_image1_url = NSURL(string: low_image1_url_str)
+        }
+        if let high_image1_url_str = dic["high_image1_url"] as? String {
+            self.high_image1_url = NSURL(string: high_image1_url_str)
+        }
+        if let low_image2_url_str = dic["low_image2_url"] as? String {
+            self.low_image2_url = NSURL(string: low_image2_url_str)
+        }
+        if let high_image2_url_str = dic["high_image2_url"] as? String {
+            self.high_image2_url = NSURL(string: high_image2_url_str)
+        }
     }
 }
